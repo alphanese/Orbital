@@ -23,7 +23,7 @@ public class AdvSearch extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position) + " selected", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -38,7 +38,7 @@ public class AdvSearch extends AppCompatActivity {
         spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent2, View view2, int position2, long id2) {
-                Toast.makeText(getBaseContext(), parent2.getItemAtPosition(position2) + "selected", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getBaseContext(), parent2.getItemAtPosition(position2) + "selected", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -52,7 +52,7 @@ public class AdvSearch extends AppCompatActivity {
         spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent3, View view3, int position3, long id3) {
-                Toast.makeText(getBaseContext(), parent3.getItemAtPosition(position3) + "selected", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getBaseContext(), parent3.getItemAtPosition(position3) + "selected", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -66,7 +66,7 @@ public class AdvSearch extends AppCompatActivity {
         spinner4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent4, View view4, int position4, long id4) {
-                Toast.makeText(getBaseContext(), parent4.getItemAtPosition(position4) + "selected", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getBaseContext(), parent4.getItemAtPosition(position4) + "selected", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
@@ -80,7 +80,7 @@ public class AdvSearch extends AppCompatActivity {
         spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent5, View view5, int position5, long id5) {
-                Toast.makeText(getBaseContext(), parent5.getItemAtPosition(position5) + "selected ", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getBaseContext(), parent5.getItemAtPosition(position5) + "selected ", Toast.LENGTH_LONG).show();
             }
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
