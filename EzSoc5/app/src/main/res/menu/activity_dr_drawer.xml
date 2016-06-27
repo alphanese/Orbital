@@ -41,5 +41,17 @@
             android:id="@+id/nav_dr_layout10"
 
             android:title="DR 10" />
+        <item
+            android:id="@+id/nav_dr_layout11"
+
+            android:title="DR 11" />
+        <item
+            android:id="@+id/nav_dr_layout12"
+
+            android:title="DR 12" />
+        <item
+            android:id="@+id/nav_dr_layout13"
+
+            android:title="DR 13" />
 
 </menu>

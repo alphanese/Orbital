@@ -100,6 +100,15 @@ public class dr extends AppCompatActivity
         else if (id == R.id.nav_dr_layout10) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new DrTenthFragment()).commit();
         }
+        else if (id == R.id.nav_dr_layout11) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new DrEleventhFragment()).commit();
+        }
+        else if (id == R.id.nav_dr_layout12) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new DrTwelvethFragment()).commit();
+        }
+        else if (id == R.id.nav_dr_layout13) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new DrThirteenthFragment()).commit();
+        }
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

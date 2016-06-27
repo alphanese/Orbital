@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 /**
  * Created by alphanese on 23/6/2016.
  */
-public class SrEleventhFragment extends Fragment {
-    View myView2;
+public class DrEleventhFragment extends Fragment {
+    View myView;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        myView2 = inflater.inflate(R.layout.sr_layout11, container, false);
-        return myView2;
+        myView = inflater.inflate(R.layout.dr_layout11, container, false);
+        return myView;
     }
 }

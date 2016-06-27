@@ -93,8 +93,6 @@ public class sr extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_frame, new SrNinthFragment()).commit();
         } else if (id == R.id.nav_sr_layout10) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new SrTenthFragment()).commit();
-        } else if (id == R.id.nav_sr_layout11) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new SrEleventhFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -6,7 +6,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Eleventh_layout_Sr"
+        android:text="Twelveth_layout"
         android:id="@+id/textView6"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Date:"
-        android:id="@+id/textView31"
+        android:id="@+id/textView20"
         android:layout_below="@+id/textView6"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

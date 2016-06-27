@@ -40,10 +40,6 @@
             android:id="@+id/nav_sr_layout10"
 
             android:title="SR 10" />
-        <item
-            android:id="@+id/nav_sr_layout11"
-
-            android:title="SR 11" />
 
 
 </menu>
