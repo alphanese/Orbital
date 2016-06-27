@@ -42,11 +42,11 @@ public class Splashscreen extends Activity {
             @Override
             public void run() {
                 try {
-                    int waited = 0;
-                    // Splash screen pause time
-                    while (waited < 3500) {
-                        sleep(100);
-                        waited += 100;
+                            int waited = 0;
+                            // Splash screen pause time
+                            while (waited < 3500) {
+                                sleep(100);
+                                waited += 100;
                     }
                     Intent intent = new Intent(Splashscreen.this,
                             MainActivity.class);
