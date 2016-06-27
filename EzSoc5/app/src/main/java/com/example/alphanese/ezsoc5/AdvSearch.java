@@ -59,7 +59,7 @@ public class AdvSearch extends AppCompatActivity {
 
             }
         });
-        spinner4=(Spinner) findViewById(R.id.DaySelction);
+        spinner4=(Spinner) findViewById(R.id.DaySelection);
         adapter4= ArrayAdapter.createFromResource(this,R.array.dates_selection_day, android.R.layout.simple_spinner_item);
         adapter4.setDropDownViewResource((android.R.layout.simple_spinner_dropdown_item));
         spinner4.setAdapter(adapter4);

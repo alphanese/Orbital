@@ -14,132 +14,128 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Room:"
-        android:id="@+id/SelectRoom"
-
-        android:textColor="@color/abc_primary_text_disable_only_material_light"
-        android:textStyle="normal|bold"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="54dp"
-        android:layout_below="@+id/DaySelction" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Date:"
+        android:id="@+id/DateText"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Select Timings from:"
-        android:id="@+id/SelectTimings"
-        android:layout_below="@+id/SelectRoom"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Timings:"
+        android:id="@+id/textView3"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="103dp"
-        android:textColor="@color/abc_primary_text_material_light"
-        android:textStyle="normal|bold"
-        android:layout_alignRight="@+id/MonthSelectiontText"
-        android:layout_alignEnd="@+id/MonthSelectiontText" />
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
 
-    <Spinner
-        android:id="@+id/DaySelction"
-        android:layout_width="0dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/DaySelectionText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"></Spinner>
-
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Room:"
+        android:id="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView10"
+        android:layout_toStartOf="@+id/textView10"
+        android:layout_marginBottom="79dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Day:"
-        android:id="@+id/DaySelectionText"
-
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/SelectRoom"
-        android:layout_toEndOf="@+id/SelectRoom" />
+        android:id="@+id/textView9"
+        android:layout_below="@+id/DateText"
+        android:layout_toRightOf="@+id/DateText"
+        android:layout_toEndOf="@+id/DateText" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Month:"
-        android:id="@+id/MonthSelectiontText"
-        android:layout_below="@+id/DaySelction"
-        android:layout_alignRight="@+id/DaySelectionText"
-        android:layout_alignEnd="@+id/DaySelectionText" />
+        android:text="Month"
+        android:id="@+id/textView10"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DaySelection"
+        android:layout_below="@+id/DateText"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MonthSelection"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignLeft="@+id/DaySelection"
+        android:layout_alignStart="@+id/DaySelection" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="From:"
+        android:id="@+id/textView31"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/MonthSelection"
+        android:layout_toStartOf="@+id/MonthSelection" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimeSelection1"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_alignLeft="@+id/MonthSelection"
+        android:layout_alignStart="@+id/MonthSelection"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimeSelection2"
+        android:layout_alignLeft="@+id/TimeSelection1"
+        android:layout_alignStart="@+id/TimeSelection1"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/TimeSelection1" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roomSelection"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignLeft="@+id/TimeSelection2"
+        android:layout_alignStart="@+id/TimeSelection2"
+        android:spinnerMode="dropdown" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search!"
-        android:id="@+id/SearchButton"
+        android:id="@+id/button3"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/SelectTimings"
-        android:layout_toEndOf="@+id/SelectTimings" />
-
-    <Spinner
-        android:id="@+id/roomSelection"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/SelectRoom"
-        android:layout_toRightOf="@+id/SelectTimings"
-        android:layout_alignRight="@+id/TimeSelection1"
-        android:layout_alignEnd="@+id/TimeSelection1" />
-
-    <Spinner
-        android:id="@+id/TimeSelection1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/SelectTimings"
-        android:layout_toRightOf="@+id/SelectTimings"
-        android:layout_alignRight="@+id/DaySelction"
-        android:layout_alignEnd="@+id/DaySelction" />
-
-    <Spinner
-        android:id="@+id/TimeSelection2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TimeSelection1"
-        android:layout_alignLeft="@+id/TimeSelection1"
-        android:layout_alignStart="@+id/TimeSelection1"
-        android:layout_alignRight="@+id/TimeSelection1"
-        android:layout_alignEnd="@+id/TimeSelection1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Date:"
-        android:id="@+id/textView3"
-        android:textColor="@color/abc_primary_text_disable_only_material_light"
-        android:textStyle="normal|bold"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="to"
-        android:id="@+id/textView5"
-        android:textColor="@android:color/black"
-        android:textStyle="normal|bold"
-        android:layout_below="@+id/TimeSelection1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/SearchButton"
-        android:layout_toStartOf="@+id/SearchButton"
-        android:layout_alignBottom="@+id/TimeSelection2" />
-
-    <Spinner
-        android:id="@+id/MonthSelection"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/roomSelection"
-        android:layout_alignLeft="@+id/DaySelction"
-        android:layout_alignStart="@+id/DaySelction"
-        android:layout_alignRight="@+id/DaySelction"
-        android:layout_alignEnd="@+id/DaySelction" />
+        android:text="To:"
+        android:id="@+id/textView40"
+        android:layout_alignTop="@+id/TimeSelection2"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31" />
 
 </RelativeLayout>
